@@ -1,0 +1,24 @@
+{
+  "name": "webgpu-learning",
+  "version": "1.0.0",
+  "description": "Learning web gpu",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run install-missing-dependencies && npm run build && npm run serve",
+    "install-missing-dependencies": "npm install",
+    "build": "webpack --config webpack.config.js",
+    "serve": "http-server -p 8080"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.8.4",
+    "@webgpu/types": "^0.1.37",
+    "http-server": "^14.1.1",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
